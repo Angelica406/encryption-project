@@ -4,7 +4,6 @@ body {
     font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('bg4.jpg');
     text-align: center;
 }
 
@@ -242,9 +241,10 @@ footer {
         margin: 20px auto;
     }
 
-    .discussion-container,
-    .video-container {
+    .video-container iframe,
+    .video-container video {
         width: 100%;
-        padding: 10px;
+        height: auto;
+        aspect-ratio: 16 / 9; 
     }
 }
