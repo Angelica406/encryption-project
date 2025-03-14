@@ -14,9 +14,7 @@
           <li><a href="#discussion-board">Discussion Board</a></li>
         </ul>
     </nav>
-
-    <!-- Encrypt/Decrypt Section -->
-    <section id="encrypt-decrypt" class="encrypt-decrypt-section">
+            <section id="encrypt-decrypt" class="encrypt-decrypt-section">
         <div class="container">
             <h1>Encrypt and Decrypt App</h1>
             
@@ -28,63 +26,136 @@
             <label id="outputLabel">Result: <span id="output"></span></label>
         </div>
     </section>
+   
 
-    <!-- Video Section -->
+
+
     <section id="videos" class="video-section">
         <h2>Encryption and Decryption Videos</h2>
         <div class="video-container">
             <div class="video">
-                <h3>Video 1</h3>
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <h3>What is Encryption?</h3>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/9chKCUQ8_VQ?si=oBOS4d2JJHlRGWl5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
             </div>
             <div class="video">
-                <h3>Video 2</h3>
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <h3>Assymmetric Encryption</h3>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/AQDCe585Lnc?si=Q9X-DxNaBNLN-qX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
             </div>
+
             <div class="video">
-                <h3>Video 3</h3>
-                <video controls>
-                    <source src="video3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <h3>Encryption and Decryption</h3>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/hdapCrcBo54?si=1prPg5Jo7cMyNrll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
+
             <div class="video">
-                <h3>Video 4</h3>
-                <video controls>
-                    <source src="video4.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                <h3>Symmetric Encryption</h3>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/o_g-M7UBqI8?si=_qrHEDnd7zL3lLWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
                 </video>
             </div>
-        </div>
+        
+        
     </section>
 
-    <!-- Discussion Board Section -->
     <section id="discussion-board" class="discussion-section">
-        <h2>Discussion Board</h2>
+        <h3>Discussion Board</h3>
         <div class="discussion-container">
             <div class="question" onclick="toggleAnswer('answer1')">
                 <h3>Why is encryption important?</h3>
-                <p class="answer" id="answer1">Encryption protects sensitive data by converting it into unreadable code, ensuring confidentiality and security.</p>
+                <p class="answer" id="answer1">Encryption is the process of transforming readable plaintext into unreadable ciphertext to mask sensitive information from unauthorized users. Organizations regularly use encryption in data security to protect sensitive data from unauthorized access and data breaches.
+
+                    Encryption works by using encryption algorithms to scramble data into an indecipherable format. Only the authorized parties with the right secret key, known as the decryption key, can unscramble the data.
+                    <br>
+                    <br>
+
+                    Encryption can protect data at rest, in transit and while being processed, regardless of whether the data is in a computer system on-premises or in the cloud. For this reason, encryption has become critical to cloud security efforts and cybersecurity strategies more broadly. 
+                    <br>
+                    <br>
+
+                    Encryption is crucial for cybersecurity as it protects sensitive data by converting it into unreadable code, ensuring confidentiality, integrity, and security. It is widely used in:<br>
+                    <br>
+                    Data Protection: Prevents unauthorized access to personal, financial, and business information.<br>
+                    Secure Communication: Used in messaging apps (WhatsApp, Signal) and emails to prevent eavesdropping.<br>
+                    Online Transactions: Protects credit card details and banking data during digital payments.<br>
+                    Regulatory Compliance: Helps businesses meet legal requirements like GDPR (Europe) and HIPAA (USA) for protecting user data.<br>
+                    National Security: Governments use encryption to protect classified information and prevent cyber threats.  <br>
+                    <br>
+                    <a href="https://www.ibm.com/think/topics/encryption">Source: https://www.ibm.com/think/topics/encryption </a><br>
+                    <a href="https://csrc.nist.gov/">Source: https://csrc.nist.gov/ </a><br>
+                    <a href="https://www.cisa.gov/">Source: https://www.cisa.gov/</a><br>
+                    <a href="https://gdpr.eu/">Source: https://gdpr.eu/</a>
+
+                </p>
             </div>
             <div class="question" onclick="toggleAnswer('answer2')">
                 <h3>Can encryption be misused?</h3>
-                <p class="answer" id="answer2">Yes, encryption can be misused by criminals to hide illegal activities, making it harder for law enforcement to track them.</p>
+                <p class="answer" id="answer2">Yes, encryption can be misused in various ways, including:
+                    <br>
+                    <br>
+                    Criminal Activities: Cybercriminals use encryption to hide their communications on the dark web and evade law enforcement. Ransomware attacks encrypt victims' data and demand payment for decryption keys.
+                    <br>
+                    <br>
+                    Terrorist and Illicit Activities: Terrorist groups use encrypted messaging apps (e.g., Telegram) to coordinate attacks.
+                    <br>
+                    <br>
+                    Insider Threats: Employees may use encryption to steal sensitive corporate data and exfiltrate it without detection.
+                    <br>
+                    <br>
+                    Privacy vs. Law Enforcement: Law enforcement agencies argue that end-to-end encryption (E2EE) in apps like WhatsApp and iMessage prevents them from accessing evidence in criminal investigations.
+                    <br>
+                    <br>
+                    <a href="https://www.ibm.com/think/topics/encryption">Source: https://www.ic3.gov//topics/encryption </a><br>
+                    <a href="https://www.europol.europa.eu/">Source: https://www.europol.europa.eu/ </a><br>
+                    <a href="www.verizon.com/dbir">Source:  www.verizon.com/dbir</a><br>
+                    <a href="https://www.justice.gov/">Source: https://www.justice.gov/</a>
+
             </div>
             <div class="question" onclick="toggleAnswer('answer3')">
                 <h3>Discussion on real-life ethical concerns about encryption.</h3>
-                <p class="answer" id="answer3">There is an ongoing debate between privacy advocates and governments regarding encryption. While it ensures privacy, it can also hinder law enforcement investigations.</p>
+                <p class="answer" id="answer3">There is an ongoing debate between privacy advocates and governments regarding encryption. While it ensures privacy, it can also hinder law enforcement investigations.
+
+                <br>
+                <br>
+                The ethical concerns surrounding encryption revolve around privacy, security, and law enforcement:
+                <br>
+                <br>
+                Government Backdoors: Some governments propose creating "backdoors" in encryption to allow law enforcement access to encrypted data.
+                <br>
+                <br>
+                Concern: This could weaken overall security and be exploited by hackers.
+                <br>
+                <br>
+                Balancing Privacy vs. Security: While encryption protects personal privacy, it can also shield criminal activities.<br>
+                Example: Apple refused the FBI’s request to unlock an encrypted iPhone used by a terrorist in the San Bernardino attack (2015), citing privacy concerns.
+                <br>
+                <br>
+
+                Mass Surveillance: Some countries ban or restrict encryption to monitor citizens, violating human rights.<br>
+                Example: China’s "Great Firewall" limits encrypted communications.
+                <br>
+                <br>
+                Corporate Responsibility: Companies like Facebook (Meta) implement encryption but face pressure to monitor content for illegal activities like child exploitation.
+                
+                <br>
+                <br>
+                <a href="https://www.eff.org/">Source: https://www.eff.org </a><br>
+                <a href="https://www.cnn.com/">Source: https://www.cnn.com/</a><br>
+                <a href="https://www.hrw.org/">Source:  https://www.hrw.org/</a><br>
+                <a href="https://www.bbc.com//">Source: https://www.bbc.com//</a>
+
+                </p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 MyTube. All rights reserved.</p>
+        <p>&copy; All rights reserved.           @Laica Ensinalis @Ma. Angelica Dichon</p>
     </footer>
 
     <script src="script.js"></script>
@@ -96,3 +167,5 @@
     </script>
 </body>
 </html>
+
+

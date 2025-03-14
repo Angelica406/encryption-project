@@ -9,11 +9,15 @@ body {
 }
 
 nav {
-    background: #333;
+    background: #52677d;
     padding: 10px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 nav ul {
     list-style: none;
@@ -43,10 +47,11 @@ nav ul li a.active::after {
     display: block;
     width: 100%;
     height: 3px;
-    background: gold;
+    background: #bdc4b4;
     position: absolute;
     bottom: -2px;
     left: 0;
+    text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
     nav ul {
@@ -65,10 +70,20 @@ nav ul li a.active::after {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 h1 {
     font-size: 24px;
+}
+h2{
+    color: white;
+}
+
+h3{
+    color: black;
+        font-size: 24px;
+
 }
 
 input {
@@ -119,15 +134,16 @@ button:hover {
 section {
     padding: 60px 20px;
     min-height: 100vh;
+    
 }
 
 .encrypt-decrypt-section {
-    background-color: black;
+    background-color: #cbd9e6;
     text-align: center;
 }
 
 .video-section {
-    background-color: goldenrod;
+    background-color: #2f4156;
     padding: 40px 0;
 }
 
@@ -156,7 +172,7 @@ section {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* 1 column */
     }
 }.discussion-section {
-    background-color: #dac360;
+    background-color: #cbd9e6;
     padding: 40px 20px;
 }
 
@@ -184,15 +200,51 @@ section {
     padding: 10px;
     border-top: 1px solid #ddd;
     margin-top: 10px;
+    text-align: justify;
 }
 @media screen and (max-width: 768px) {
     .discussion-container {
         width: 90%;
     }
 }
+
+p{
+    align-items: justify-left;
+}
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
+    background: #52677d;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .discussion-container,
+    .video-container {
+        width: 100%;
+        padding: 10px;
+    }
 }
