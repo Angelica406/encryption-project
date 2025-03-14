@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt/Decrypt App & YouTube-like Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <nav>
+        <ul>
+          <li><a href="#encrypt-decrypt">Encrypt/Decrypt App</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#discussion-board">Discussion Board</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encrypt/Decrypt Section -->
+    <section id="encrypt-decrypt" class="encrypt-decrypt-section">
+        <div class="container">
+            <h1>Encrypt and Decrypt App</h1>
+            
+            <input type="text" id="textInput" placeholder="Enter text">
+            <input type="number" id="shiftInput" placeholder="Shift value">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="decryptBtn">Decrypt</button>
+            
+            <label id="outputLabel">Result: <span id="output"></span></label>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="video-section">
+        <h2>Encryption and Decryption Videos</h2>
+        <div class="video-container">
+            <div class="video">
+                <h3>Video 1</h3>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video">
+                <h3>Video 2</h3>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video">
+                <h3>Video 3</h3>
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video">
+                <h3>Video 4</h3>
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Board Section -->
+    <section id="discussion-board" class="discussion-section">
+        <h2>Discussion Board</h2>
+        <div class="discussion-container">
+            <div class="question" onclick="toggleAnswer('answer1')">
+                <h3>Why is encryption important?</h3>
+                <p class="answer" id="answer1">Encryption protects sensitive data by converting it into unreadable code, ensuring confidentiality and security.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer('answer2')">
+                <h3>Can encryption be misused?</h3>
+                <p class="answer" id="answer2">Yes, encryption can be misused by criminals to hide illegal activities, making it harder for law enforcement to track them.</p>
+            </div>
+            <div class="question" onclick="toggleAnswer('answer3')">
+                <h3>Discussion on real-life ethical concerns about encryption.</h3>
+                <p class="answer" id="answer3">There is an ongoing debate between privacy advocates and governments regarding encryption. While it ensures privacy, it can also hinder law enforcement investigations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MyTube. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            answer.style.display = (answer.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg4.jpg');
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: gold;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+#encryptBtn {
+    background: #28a745;
+    color: white;
+}
+
+#decryptBtn {
+    background: #dc3545;
+    color: white;
+}
+
+#outputLabel {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.encrypt-decrypt-section {
+    background-color: black;
+    text-align: center;
+}
+
+.video-section {
+    background-color: goldenrod;
+    padding: 40px 0;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* 1 column */
+    }
+}.discussion-section {
+    background-color: #dac360;
+    padding: 40px 20px;
+}
+
+.discussion-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.question {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.question:hover {
+    background: #f1f1f1;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .discussion-container {
+        width: 90%;
+    }
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
